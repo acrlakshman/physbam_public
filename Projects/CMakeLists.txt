@@ -46,3 +46,14 @@ ${PhysBAM_PL_DIR}/Projects/strand_semi_implicit/main.cpp
 )
 
 target_link_libraries(strand_semi_implicit PhysBAM_Tools PhysBAM_Geometry)
+
+# crystal_growth
+add_executable(crystal_growth
+	${PhysBAM_PL_DIR}/Projects/user_projects/crystal_growth/main.cpp
+	${PhysBAM_PL_DIR}/Projects/user_projects/crystal_growth/HermiteInterpolation.cpp
+	${PhysBAM_PL_DIR}/Projects/user_projects/crystal_growth/Extrapolate.cpp
+	${PhysBAM_PL_DIR}/Projects/user_projects/crystal_growth/Reinitialize.cpp
+	)
+
+target_link_libraries(crystal_growth PhysBAM_Tools PhysBAM_Geometry)
+
