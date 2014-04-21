@@ -47,6 +47,33 @@ ${PhysBAM_PL_DIR}/Projects/strand_semi_implicit/main.cpp
 
 target_link_libraries(strand_semi_implicit PhysBAM_Tools PhysBAM_Geometry)
 
+# ball_semi_implicit
+add_executable(ball_semi_implicit
+	${PhysBAM_PL_DIR}/Projects/user_projects/ball_semi_implicit/main.cpp
+	${PhysBAM_PL_DIR}/Projects/user_projects/ball_semi_implicit/SIMULATION_LAYOUT.cpp
+	${PhysBAM_PL_DIR}/Projects/user_projects/ball_semi_implicit/SIMULATION_DRIVER.cpp
+	)
+
+target_link_libraries(ball_semi_implicit PhysBAM_Tools PhysBAM_Geometry)
+
+# collision_backward_euler
+add_executable(collision_backward_euler
+	${PhysBAM_PL_DIR}/Projects/user_projects/collision_backward_euler/main.cpp
+	${PhysBAM_PL_DIR}/Projects/user_projects/collision_backward_euler/SIMULATION_LAYOUT.cpp
+	${PhysBAM_PL_DIR}/Projects/user_projects/collision_backward_euler/SIMULATION_DRIVER.cpp
+	)
+
+target_link_libraries(collision_backward_euler PhysBAM_Tools PhysBAM_Geometry)
+
+# collision_semi_implicit
+add_executable(collision_semi_implicit
+	${PhysBAM_PL_DIR}/Projects/user_projects/collision_semi_implicit/main.cpp
+	${PhysBAM_PL_DIR}/Projects/user_projects/collision_semi_implicit/SIMULATION_LAYOUT.cpp
+	${PhysBAM_PL_DIR}/Projects/user_projects/collision_semi_implicit/SIMULATION_DRIVER.cpp
+	)
+
+target_link_libraries(collision_semi_implicit PhysBAM_Tools PhysBAM_Geometry)
+
 # crystal_growth
 add_executable(crystal_growth
 	${PhysBAM_PL_DIR}/Projects/user_projects/crystal_growth/main.cpp
