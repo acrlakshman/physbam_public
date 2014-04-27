@@ -33,6 +33,11 @@ Linux:
 OSX:
 Apple LLVM version 5.0 (clang-500.2.79) (based on LLVM 3.3svn)
 
+
+Windows:
+
+VS2013
+MinGW (GCC 3.4.5)
 ```
 
 Build testing is available [here](https://drone.io/github.com/acrlakshman/physbam_public)
